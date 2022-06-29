@@ -1,0 +1,208 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'KoHo', sans-serif !important;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav:nth-child(1) {
+    padding-left: 10px;
+}
+
+.nav__logo {
+    width: 100px;
+    height: 80%;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nav__product {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav__product__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__product__item__logo {
+    width: 24px;
+    height: 24px;
+}
+
+.nav__buttonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.nav__buttonContainer__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav__buttonContainer__button__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.header {
+    background-color: rgb(237,158,83);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.header > p {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+.productContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.productContainer__card {
+    width: 280px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5% 20px 5%;
+}
+
+.productContainer__card__imgContainer {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/ciocco.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.productContainer__card__headerContainer {
+    font-size: 1.25rem;
+    padding-left: 10px;
+}
+
+.productContainer__card__descriptionContainer {
+    height: 20%;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.productContainer__card__myHr {
+    width: 80%;
+}
+
+.productContainer__card__price_weight {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.productContainer__card__price_weight > * {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.productContainer__card__myBtn {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 0;
+}
+
+.productContainer__card__myBtn:hover {
+    background-color: rgba(237, 157, 83, 0.342);
+}
+
+.footer {
+    background-color: rgb(237,158,83);
+    width: 100%;
+    height: 30px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer__location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 5;
+}
+
+.footer__location > a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer__location > p {
+    margin: 0;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 1;
+}
+
+.footer__contacts > * {
+    margin-right: 30px;
+}
+
+.socialIcon {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 700px) {
+    .nav {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 120px;
+    }
+
+    .nav__logo {
+        height: 60px;
+    }
+
+    .nav__buttonContainer {
+        display: none;
+    }
+
+    .header {
+        margin-top: 120px;
+    }
+}
