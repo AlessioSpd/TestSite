@@ -1,0 +1,85 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.myNav {
+    /* background-color: pink; */
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 10;
+}
+
+.leftButton, .rightButton {
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/panettone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+
+.logo {
+    width: 40%;
+    height: 40%;
+    background-image: url("../img/logo2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.mainPanel {
+    display: flex;
+    flex-direction: column;
+    flex: 0;
+    background-color: pink;
+    opacity: 0;
+}
+
+.test {
+    background-color: pink;
+    width: 60%;
+    height: 10%;
+    justify-self: center;
+    align-self: center;
+    top: 10px;
+}
+
+.searchBar {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes logoResize {
+    0% {
+        width: 40%;
+        height: 40%;
+    }
+    
+    100% {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@keyframes logoUp {
+    0% {flex: 0;}
+    100% { flex: 10}
+}
+
+@keyframes navResize {
+    0% { flex: 10; }
+    100% { flex: 1; }
+}
