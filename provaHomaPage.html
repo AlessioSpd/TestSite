@@ -46,8 +46,19 @@
     }
 
     .mainPanel {
-        /* background-color: coral; */
+        display: flex;
+        flex-direction: column;
         flex: 0;
+        border: solid 1px black;
+    }
+
+    .test {
+        background-color: pink;
+        width: 60%;
+        height: 10%;
+        justify-self: center;
+        align-self: center;
+        top: 10px;
     }
 
     @keyframes fadeIn {
@@ -85,7 +96,10 @@
             <div class="logo" id="logo" onmouseover="javascript:logoUp()"></div>
             <div class="rightButton" id="rightButton"></div>
        </div>
-       <div class="mainPanel" id="mainPanel"></div>
+       <div class="mainPanel" id="mainPanel">
+            <div style="width: 100%; height: 50px;"></div>
+            <div class="test"></div>
+       </div>
     </div>
 </body>
 </html>
